@@ -14,7 +14,6 @@ Compare with Superscript, I prefer rivescript more for the following reason:
 3. Rivescript using Unicode to support Chinese wildcards and almost support all basic Chinese rules, which superscript cannot do.
 4. Really simple, without MongoDB, while superscript has MongoDB built-in.
 
-
 <!--more-->
 
 ## Command
