@@ -1,4 +1,4 @@
-# debian8 新机器安装
+# debian8 Install
 @(技术随记)
 
 using 马克飞象 cannot work as expect. It looks strange on evernote. After a while I will forget the basic install command, so put it here.
