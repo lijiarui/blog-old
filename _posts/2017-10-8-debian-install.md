@@ -1,7 +1,9 @@
 # debian8 新机器安装
 @(技术随记)
 
-[TOC]
+using 马克飞象 cannot work as expect. It looks strange on evernote. After a while I will forget the basic install command, so put it here.
+
+<!--more-->
 
 # 1.view system info
 ```
