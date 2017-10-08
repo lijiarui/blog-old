@@ -1,5 +1,9 @@
-# debian8 Install
-@(技术随记)
+---
+layout: post
+title: "Debian System Install"
+date: 2017-10-08 10:00 +0800
+author: lijiarui
+---
 
 using 马克飞象 cannot work as expect. It looks strange on evernote. After a while I will forget the basic install command, so put it here.
 
