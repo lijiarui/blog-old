@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "Github useful command"
-date: 2017-10-18 10:00 +0800
+date: 2017-10-18 00:00 +0800
 author: lijiarui
 ---
+
+
 I always foget the basic use of github... I used Evernote before but it really ugly when no markdown. So I came here...
 
 <!--more-->
