@@ -43,6 +43,16 @@ git log
 git reset --hard <commit_id>
 git push origin HEAD —force
 ```
+If you didn't publish changes, to remove latest commit, you can do
+```
+$ git reset --hard HEAD^
+```
+(note that this would also remove all uncommitted changes; use with care).
+
+If you already published to-be-deleted commit, use git revert
+```
+$ git revert HEAD
+```
 
 ## Delete branch  
 ```
