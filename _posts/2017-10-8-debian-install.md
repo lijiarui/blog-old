@@ -9,13 +9,13 @@ using 马克飞象 cannot work as expect. It looks strange on evernote. After a 
 
 <!--more-->
 
-# 1.view system info
+### 1.view system info
 ```
 uname -a
 hostname NEW_NAME // change hostname
 ```
 
-# 2.change default port
+### 2.change default port
 ```
 vi /etc/ssh/sshd_config
 ```
@@ -29,7 +29,7 @@ restart
 /etc/init.d/ssh restart
 ```
 
-# 3. install sudo
+### 3. install sudo
 sudo is not installed on Debian by default. Make sure your system is up-to-date and install it.
 In Debian 8 (Jessie) add-apt-repository command utility is available under software-properties-common package. So use following command to install it
 ```
@@ -37,7 +37,7 @@ aptitude install sudo
 sudo apt-get install software-properties-common
 ```
 
-# 4.install node7
+### 4.install node7
 ```
 curl https://raw.githubusercontent.com/creationix/nvm/v0.11.1/install.sh | bash
 
@@ -45,19 +45,19 @@ nvm install 7
 nvm alias default 7
 ```
 
-# 5.install git
+### 5.install git
 ```
 sudo apt-get update
 sudo apt-get install git-core
 ```
 
-# 6.install typescript
+### 6.install typescript
 ```
 npm install -g ts-node
 npm install -g typescript
 ```
 
-# 7.install docker
+### 7.install docker
 [Reference Link](https://docs.docker.com/engine/installation/linux/debian/#install-using-the-repository)
 ```
 sudo apt-get install \
@@ -81,7 +81,7 @@ apt-cache madison docker-ce
 sudo docker run hello-world
 ```
 
-# 8.install mongodb
+### 8.install mongodb
 [Reference Link](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-debian-8)
 ```
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
@@ -94,28 +94,55 @@ sudo systemctl enable mongod.service
 sudo systemctl start mongod
 ```
 
-# 9.add cnpm Permanently
+### 9.add cnpm Permanently
 [Reference Link](https://github.com/Chatie/wechaty/wiki/NPM)
 ```
 npm config set registry https://registry.npm.taobao.org
 ```
 
-# 10. wechaty
+### 10. wechaty
 ```
 npm install
 
 docker run -t -i --rm --privileged --net=host --volume="$(pwd)":/bot --name=juxiaomi zixia/wechaty:latest src/index.ts
 ```
 
-# 11. change alias
+### 11. change alias
 ```
 vi .zshrc
 vi .bashrc
 ```
 
 
-# 12. install tree
+### 12. install tree
 ```
 apt-get update && apt-get install tree
 aptitude update && aptitude install tree
 ``` 
+
+## AWS Version
+
+### 1. install vim
+```
+apt-get install vim
+```
+
+### 2. change ssh user root as default
+Should open PasswordAuthentication and PermitRootLogin。
+> vim /etc/ssh/sshd_config
+```
+PasswordAuthentication yes
+PermitRootLogin yes
+```
+> service sshd restart
+
+sudo passwd root
+改密码
+
+sudo -
+输入新修改的密码
+
+root登陆成功
+
+
+
