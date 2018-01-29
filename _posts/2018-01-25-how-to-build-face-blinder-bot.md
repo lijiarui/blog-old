@@ -1,8 +1,8 @@
 ---
 layout: post
-title: '构建脸盲聊天机器人--Wechaty Blinder'
+title: "构建脸盲聊天机器人--Wechaty Blinder"
 author: 李佳芮
-date: '2018-1-25 23:04:27 +0800'
+date: 2018-1-25 23:04:27 +0800
 published: true
 ---
 
